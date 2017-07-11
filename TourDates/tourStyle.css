@@ -170,6 +170,27 @@ div#videoPromo> iframe {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: top;
+	justify-content:space-around;
+	padding: 150px 45px 45px 45px;
+	flex-wrap: wrap;
+}
+
+#ColDates {
+	background: url(http://www.headcrusher.net/ColDates.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+	justify-content:space-around;
+	padding: 150px 45px 45px 45px;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 900px) {
+	#TxDates {
+	background: url(http://www.headcrusher.net/TxMap.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
 	display:flex;
 	justify-content:space-around;
 	padding: 150px 45px 45px 45px;
@@ -186,6 +207,9 @@ div#videoPromo> iframe {
 	padding: 150px 45px 45px 45px;
 	flex-wrap: wrap;
 }
+
+}
+
  #TxDates > div.showDay {
 	display: flex; padding-top: 10px;
 	flex-direction: column;
