@@ -1,0 +1,440 @@
+/*defines custom font*/
+@font-face {
+    font-family: 'satansminions';
+    src: url('satam___-webfont.woff2') format('woff2'),
+         url('satam___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*BoxStyle: Cubic*/
+/*Style Body*/
+body { 
+	background: #0b0b0b;
+	font-family: 'El Messiri', sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+/*********************navbar styles and logos**************/
+
+.btn-default {
+	text-transform: capitalize;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+}
+
+.navbar-left>img {
+	width: 40px;
+	display: inline-block;
+	padding-top: 10px;
+}
+.navbar-inverse {
+    background-color: rgba(10,10,6,1);
+    border-color: #080808;
+}
+
+/*end navbar */
+/*Text and Headders*/
+
+h1 {
+	
+	font-size: 80px;
+	color: white;
+	margin: auto;
+}
+
+
+h2 {
+	font-size: 40px;
+	text-align: center;
+	color: rgb(254,254,254);
+	padding-top: 20px;
+}
+
+h3 {
+	font-size: 20px;
+	text-align: right;
+	color: white;
+	padding-right: 25px;
+
+}
+
+p	{
+	font-size: 16px;
+	color: white;
+	padding: 0 25px;
+	text-align: right;
+}
+
+
+
+/********************** cabezal style************************/
+
+
+div#cabezal {
+	display: flex; flex-direction: column;
+	height: 720px;
+	min-width: 100%;
+	padding-top: 54px;
+	background-image: url(http://www.headcrusher.net/rap1.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border-radius: 0px 0px 6px 7px;
+-moz-border-radius: 0px 0px 6px 7px;
+-webkit-border-radius: 0px 0px 6px 7px;
+border: 2px solid transparent;
+}
+ div#propaganda {
+ 	height: 65%;
+	display: flex;
+	background: url(http://www.headcrusher.net/cdImage.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+#cabezalText {
+	display: flex;
+	flex-direction: column;
+	justify-content:flex-end;
+
+
+}
+
+
+#orderButton {
+	width: 50%;
+	margin: 0 auto;
+
+	
+}
+div#cabezal img {
+	 width: 100%;
+}
+
+
+
+@media (min-width: 900px) {
+	div#cabezal img {
+		min-width: 100%; width: 720px;
+}
+div#propaganda {
+ 	height: 65%;
+	width: 50%;
+	margin: 120px auto;
+	display: flex;
+	background: url(http://www.headcrusher.net/cdImage.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div#propaganda {
+ 	height: 65%;
+	margin: 120px auto;
+	display: flex;
+	background: url(http://www.headcrusher.net/cdImage.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#orderButton {
+	width: 42%;
+	margin: 0 auto;
+
+}
+}
+
+/*fin cabezal*/
+
+/*****************************COMIENZO CONTENIDO********************/
+
+
+/****************** separador**********************/
+
+.titleBanner {
+	background-color: rgba(10, 10, 6, 1);
+	width: 100%;
+	min-height: 90px;
+	height: auto;
+	display:flex;
+		
+}
+.alignBox {
+	background: url(http://headcrusher.net/chalice.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	margin:auto;
+
+}
+
+/****************** separador**********************/
+
+
+
+
+/*contenido*/
+div#contenido {
+	background:url(http://www.headcrusher.net/bg-monje.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}
+
+
+@media (min-width: 900px) {
+	img.newsImg {
+	margin: auto; padding: 10px;
+	width:300px;
+	
+	}
+
+	div.border {
+	background-color: rgba(6,11,11,0.7);
+	display: flex;
+	/*flex-direction: column;*/
+	padding: 10px;
+	margin: 10px auto;
+}
+}
+
+
+/* seccion noticias*/
+
+#contenido > div.flex {
+	padding: 30px 0;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+
+
+@media (max-width: 900px) {
+	div.border {
+	background-color: rgba(6,11,11,0.7);
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	margin: 10px auto;
+	}
+
+	img.newsImg {
+	padding: 10px;
+	width: 250px;
+	margin-left: 25px;
+	}
+
+/*	div.border>div.imgFrame {
+	display:flex; margin:auto;
+	}*/
+}
+
+/************************************social media **************************/
+
+div#socialMedia {
+	background-image: url('http://www.headcrusher.net/bg-sword.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+@media (min-width: 900px) {
+	#socialMedia > div.flex {
+	display:flex;
+	justify-content: space-between;
+	padding: 50px 10px;
+}
+
+}
+
+#socialMedia > div.flex {
+
+	justify-content: space-between;
+	padding: 50px 10px;
+}
+
+
+#bcPlayer > iframe{
+	display: block;
+	padding: 10px;
+}
+
+#facebook > iframe {
+	display: block;
+	padding: 10px 0;
+
+
+}
+
+
+#twitterFrame {	
+	width:300px;
+	padding: 10px;
+
+}
+
+img.sMIcons {
+	width: 50px;
+}
+
+/*end contenido*/
+
+/**************Tour dates*****************/
+
+#tourDates {
+	background: url(http://headcrusher.net/bg-monje.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.showDates {	
+	padding: 45px 0 20px 0;
+}
+
+#fecha {
+	display:flex;
+	justify-content:space-around;
+	padding: 45px;
+	background: rgba(6,11,11,.3);
+	flex-wrap: wrap;
+}
+
+div.showDay {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 20%;
+	height: 350px;
+	border: 2px solid white;
+	text-align: center;
+	background: rgba(6,11,11,0.7);
+	background-image: url(http://www.headcrusher.net/ghoul.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	box-shadow: 10px 10px 10px rgba(6,11,11,1);
+}
+.showInfo {
+	margin: auto;
+	
+}
+a.ticket {
+	margin: 10px;
+}
+div#moreDates>h3 {
+	background: rgba(6,11,11,.3);
+	margin-top:0;
+	padding-bottom: 5px;
+}
+
+
+
+/*****************************end touring***********************/
+/*footer titles */
+
+#feet {
+	background: black;
+	min-width: 100%;
+	position: relative;
+	bottom: 0px;
+
+}
+
+/*sponsor Links
+
+/*Links*/
+#footLinks {
+	padding-left: 0px;
+	float: right;
+	width: 15%;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	border-left: 2px solid silver;
+}
+#footLinks>ul>li a {
+	color: #33302C;
+	padding-left: 0;
+	font-size: 12px;
+	text-align: right;
+}
+#footLinks>ul>li:hover a  {
+	color: #202E26;
+	text-decoration: none;
+	padding-left: 0;
+	font-size: 12px;
+}
+
+#footLinks>ul {
+	color: #33302C;
+	padding-left: 0;
+	list-style: none;
+	position: relative;
+	right: 0;
+	bottom: 0;
+	text-align: end;
+}
+
+/*Auspicios*/
+#sponsor {
+	width: 65%;
+}
+.auspicios {
+	/*border: 2.5px dashed green;*/
+	float: left;
+	padding: 5px;
+}
+/*logo auspicios*/
+#rLogo {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#tNLogo {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#lWALogo{
+	width: 100px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#ebsLogo{
+	width: auto;
+	height: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#espLogo{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#tLogo {
+	width: 120px;
+	height: auto;
+	padding-right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}

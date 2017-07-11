@@ -1,0 +1,441 @@
+/*
+Project: HeadCrusherSite
+	ventana: Media
+		bones: media.html ; Style: mediaStyle.css
+
+Author: GustavoCalderón
+BoxName:HeadCrusaher
+BoxStyle: 
+Box: Cubic
+framework: bootstrap
+
+ */
+
+/*defines custom font*/
+/*BoxStyle: Cubic*/
+/*Style Body*/
+body { 
+	background: #0b0b0b;
+	font-family: 'El Messiri', sans-serif;
+	
+
+}
+html {
+	height: 100%;
+}
+
+
+
+/*********************navbar styles and logos**************/
+
+
+.btn-default {
+	text-transform: capitalize;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+}
+
+.navbar-left>img {
+	width: 40px;
+	display: inline-block;
+	padding-top: 10px;
+}
+.navbar-inverse {
+    background-color: rgba(10,10,6,1);
+    border-color: #080808;
+}
+
+/**********************end navbar *******************/
+
+/*Text and Headders*/
+
+h1 {
+	
+	font-size: 80px;
+	color: white;
+	margin: auto;
+}
+
+
+h2 {
+	font-size: 40px;
+	text-align: center;
+	color: rgb(254,254,254);
+	padding-top: 20px;
+}
+
+h3 {
+	font-size: 20px;
+	text-align: right;
+	color: white;
+	padding-right: 25px;
+
+}
+
+p	{
+	font-size: 16px;
+	color: white;
+	padding: 0 25px;
+	text-align: right;
+}
+
+
+/********************** cabezal style************************/
+
+
+div#cabezal {
+	display: flex;
+	height: 420px;
+	min-width: 100%;
+	padding-top: 54px;
+	background: rgba(6, 11, 11, 0.8);
+	background-image: url(http://headcrusher.net/hcmusiclab.jpg);
+	background-size: cover;
+	background-position-y: -25px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border-radius: 0px 0px 6px 7px;
+-moz-border-radius: 0px 0px 6px 7px;
+-webkit-border-radius: 0px 0px 6px 7px;
+border: 2px solid transparent;
+	box-shadow: 6px 12px 18px rgba(6, 11, 11, 1);
+}
+ div#propaganda {
+ 	margin: auto;
+	display: flex;
+}
+
+
+
+
+/*fin cabezal*/
+
+/*****************************COMIENZO CONTENIDO********************/
+
+
+/********************title banner***************/
+
+
+
+.titleBanner {
+	background-color: rgba(10, 10, 6, 1);
+	width: 100%;
+	min-height: 90px;
+	height: auto;
+	display:flex;
+		
+}
+.alignBox {
+	background: url(http://headcrusher.net/chalice.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	margin:auto;
+
+}
+
+/*img.chalice {
+	width: 48px; height: 48px;
+}
+*/
+/********************** end title banner*********************/
+
+/*************************video*****************************/
+
+
+#video {
+	background: url(http://www.headcrusher.net/bg-monje.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+#video > .videoFlex{
+	padding-bottom:50px;
+	
+}
+
+#featVideo .embed-container { 
+	position: relative; padding-bottom: 56.25%; 
+	height: 0; overflow: hidden; max-width: 100%; 
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+	position: absolute; 
+	top: 0; left: 0; 
+	width: 100%; height: 100%; 
+}
+
+
+#videoGrid .videoTile {
+	padding-bottom: 20px;
+}
+
+div.heading {
+	display:flex;
+}
+div.heading > h3 {
+	margin: auto;
+	padding-top:25px;padding-bottom:15px;
+}
+
+div#youTubeLink {
+	display: flex;
+	padding-top: 15px;
+}
+
+#youTubeLink > p {
+	text-align: right;
+	padding: 0;
+}
+.fa-youtube {
+	font-size: 32px;
+	color: red;
+}
+
+
+@media (max-width: 900px) {
+	div.videoTile iframe {
+	width: 100%;
+}
+}
+
+
+@media (min-width: 900px) {
+	 div.videoWrap {
+	display: flex; flex-wrap:wrap;
+	flex-direction: column;
+	
+}
+#video > .videoFlex{
+	display: flex;
+	padding-bottom:50px;
+	
+}
+#videoGrid {
+	width:400px; padding-top:50px;
+	
+}
+
+div.videoTile iframe {
+	margin: auto;
+
+}
+#featVideo {
+	width: 750px;
+	padding-top:50px;	
+}
+#videoGrid .videoTile {
+	flex-basis: 45%;
+	display:flex;
+}
+
+}
+
+
+
+/*************************video*****************************/
+
+
+
+/********************Discography**************/
+#discography {
+	background-image: url('http://www.headcrusher.net/bg-sword.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+
+
+div#discography > div.container {
+	padding-top:50px; padding-bottom: 50px;
+	
+}
+div.albumGrid {
+	justify-content: space-between;
+
+}
+
+div.album {
+	flex-basis:24%;
+	background-color: rgba(6,11,11,0.4);
+}
+div.albumInfo {
+	font-size: 16px;
+}
+div.albumImg {
+	padding-left:20%;
+	/*margin: auto;*/
+	}
+
+@media (min-width: 900px) {
+	div.albumGrid {
+	display: flex; 
+	padding-bottom: 20px;
+}
+}
+
+@media (max-width: 900px) {
+	div.album {
+		flex-direction: column;
+	}
+	div.albumImg {
+		padding-left:20%;
+	}
+}
+h3.albumTitle {
+	margin:0;
+	color: gold;
+}
+
+/********************Discography**************/
+
+
+/**************photo section*****************/
+
+#photoSection {
+	background-image: url(http://headcrusher.net/bg-band-blk.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+div.flexBox> div.wrapper {
+	display: flex; display: -webkit-flex;
+	flex-wrap: wrap;
+	margin: auto;
+	justify-content:space-around;
+	
+}
+div.flexBox {
+	padding-top: 40px; padding-bottom: 40px;
+	width: 900px;
+}
+div.wrapper > img {
+	width:30%; height: 202px;
+	padding-top: 20px; padding-bottom: 20px;
+}
+
+@media (min-width: 900px) {
+	div.flexBox> div.wrapper{
+		border: 4.20px solid transparent;
+	}
+	div.wrapper > img {
+		flex-basis:30%;
+	}
+
+}
+@media(max-width: 900px) {
+	div.flexBox > div.wrapper {
+		flex-direction: column;
+	}
+}
+
+
+
+
+/**************photo section*****************/
+
+/*footer titles */
+#logos {
+	width:50%;
+}
+#feet {
+	background: rgba(10,10,6,1);
+	min-width: 100%;
+	position: relative;
+	bottom: 0px;
+
+}
+
+/*sponsor Links
+
+/*Links*/
+#footLinks {
+	padding-left: 0px;
+	float: right;
+	width: 15%;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	border-left: 2px solid silver;
+}
+#footLinks>ul>li a {
+	color: #33302C;
+	padding-left: 0;
+	font-size: 12px;
+	text-align: right;
+}
+#footLinks>ul>li:hover a  {
+	color: #202E26;
+	text-decoration: none;
+	padding-left: 0;
+	font-size: 12px;
+}
+
+#footLinks>ul {
+	color: #33302C;
+	padding-left: 0;
+	list-style: none;
+	position: relative;
+	right: 0;
+	bottom: 0;
+	text-align: end;
+}
+
+/*Auspicios*/
+#sponsor {
+	width: 65%;
+}
+.auspicios {
+	/*border: 2.5px dashed green;*/
+	float: left;
+	padding: 5px;
+}
+/*logo auspicios*/
+#rLogo {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#tNLogo {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#lWALogo{
+	width: 100px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#ebsLogo{
+	width: auto;
+	height: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#espLogo{
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#tLogo {
+	width: 120px;
+	height: auto;
+	padding-right: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
